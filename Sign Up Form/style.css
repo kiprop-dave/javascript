@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: palevioletred;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    align-items: center;
+    height: 100vh;
+}
+
+#side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    text-align: left;
+    margin-left: 8rem;
+    color: white;
+}
+
+#fill {
+    height: 10cm;
+    margin-right: 8rem;
+}
+
+.trial {
+    background-color: blueviolet;
+    height: 3.5rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+}
+
+#bold {
+    font-size: 25px;
+}
+
+.form-fill {
+    padding-top: 1rem;
+    text-align: center;
+    background-color: beige;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.form-input {
+    width: 30rem;
+    padding: 0.8rem;
+}
+
+.claim {
+    margin-top: 0.5cm;
+    margin-bottom: 0.2cm;
+    background-color: rgb(50, 206, 50);
+    border-radius: 7px;
+    outline-style: none;
+}
+
+@media screen and (max-width:800px) {
+    .container {
+        display: block;
+        height: 900px;
+    }
+
+    #side {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: auto;
+    }
+
+    #fill {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .form-input {
+        width: 90%;
+        padding: 0.8rem;
+    }
+
+    .claim {
+        margin-top: 0.5cm;
+        margin-bottom: 0.2cm;
+    }
+}

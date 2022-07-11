@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="side">
+        <h1>Learn how to code by <br />watching others</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem libero repellat eligendi excepturi tempora unde ad
+          cupiditate laboriosam suscipit tempore, ex accusamus expedita magnam
+          quo adipisci earum eum veniam alias id rem quia velit, quidem
+          similique. Nostrum animi asperiores ipsam?
+        </p>
+      </div>
+      <div id="fill">
+        <div class="trial">
+          <p>
+            <span id="bold">try free for 7 days</span> and <span>$20 </span>per
+            month thereafter
+          </p>
+        </div>
+        <div class="form-fill">
+          <form name="myForm">
+            <label for="fname">First Name:</label> <br />
+            <input type="text" name="fname" id="fname" class="form-input" />
+            <br />
+            <label for="lname">Last name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              class="form-input"
+              value=""
+            />
+            <br />
+            <label for="phone">Phone Number:</label><br />
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              class="form-input"
+              value=""
+            />
+            <br />
+            <label for="email">Email:</label><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="form-input email"
+              value=""
+            />
+            <br />
+            <button
+              name="claim"
+              id="submit"
+              class="form-input claim"
+              onclick="logStuff()"
+            >
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </form>
+          <p>&copy; Terms and conditions apply</p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
